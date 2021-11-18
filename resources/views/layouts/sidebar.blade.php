@@ -44,6 +44,11 @@
                     <i class="fa fa-truck"></i> <span>Supplier</span>
                 </a>
             </li>
+            <li>
+                <a href="{{ route('landingpage') }}">
+                    <i class="fa fa-truck"></i> <span>Landing Page</span>
+                </a>
+            </li>
             <li class="header">TRANSAKSI</li>
             <li>
                 <a href="{{ route('pengeluaran.index') }}">
