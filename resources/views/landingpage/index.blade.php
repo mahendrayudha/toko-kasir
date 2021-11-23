@@ -55,40 +55,6 @@
                             <span class="help-block with-errors"></span>
                         </div>
                     </div>
-                    <div class="form-group row">
-                        <label for="path_logo" class="col-lg-2 control-label">Logo</label>
-                        <div class="col-lg-4">
-                            <input type="file" name="path_logo" class="form-control" id="path_logo"
-                                onchange="preview('.tampil-logo', this.files[0])">
-                            <span class="help-block with-errors"></span>
-                            <br>
-                            <div class="tampil-logo"></div>
-                            <img src="{{url('/'). $data->logo}} " alt="" width="300">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="hero_app_image" class="col-lg-2 control-label">Hero App Image</label>
-                        <div class="col-lg-4">
-                            <input type="file" name="hero_app_image" class="form-control" id="hero_app_image"
-                                onchange="preview('.tampil-hero', this.files[0])">
-                            <span class="help-block with-errors"></span>
-                            <br>
-                            <div class="tampil-hero"></div>
-                            <img src="{{url('/'). $data->hero_app_image}} " alt="" width="300">
-                        </div>
-                    </div>
-                    <div class="form-group row">
-                        <label for="download_hero_app_image" class="col-lg-2 control-label">Download Hero App Image</label>
-                        <div class="col-lg-4">
-                            <input type="file" name="download_hero_app_image" class="form-control" id="download_hero_app_image"
-                                onchange="preview('.tampil-download', this.files[0])">
-                            <span class="help-block with-errors"></span>
-                            <br>
-                            <div class="tampil-download"></div>
-                            <img src="{{url('/'). $data->download_app_image}} " alt="" width="300">
-                        </div>
-                    </div>
-                    
                 </div>
                 <div class="box-footer text-right">
                     <button class="btn btn-sm btn-flat btn-primary"><i class="fa fa-save"></i> Simpan Perubahan</button>
