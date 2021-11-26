@@ -4,7 +4,7 @@
         <!-- mini logo for sidebar mini 50x50 pixels -->
         @php
             $words = explode(' ', $setting->nama_perusahaan);
-            $word  = '';
+            $word = '';
             foreach ($words as $w) {
                 $word .= $w[0];
             }

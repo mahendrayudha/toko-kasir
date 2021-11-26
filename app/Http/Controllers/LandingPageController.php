@@ -57,7 +57,6 @@ class LandingPageController extends Controller
      */
     public function edit($id)
     {
-        //
     }
 
     /**
@@ -76,28 +75,28 @@ class LandingPageController extends Controller
         $landingpage->download_subtitle = $request->download_subtitle;
         $landingpage->footer_desc = $request->footer_desc;
 
-        if ($request->hasFile('path_logo')) {
-            $file = $request->file('path_logo');
-            $nama = 'logo-' . date('YmdHis') . '.' . $file->getClientOriginalExtension();
-            $file->move(public_path('/img'), $nama);
+        // if ($request->hasFile('path_logo')) {
+        //     $file = $request->file('path_logo');
+        //     $nama = 'logo-' . date('YmdHis') . '.' . $file->getClientOriginalExtension();
+        //     $file->move(public_path('/img'), $nama);
 
-            $landingpage->logo = "/img/$nama";
-        }
+        //     $landingpage->logo = "/img/$nama";
+        // }
 
-        if ($request->hasFile('hero_app_image')) {
-            $file = $request->file('hero_app_image');
-            $nama = 'logo-' . date('Y-m-dHis') . '.' . $file->getClientOriginalExtension();
-            $file->move(public_path('/img'), $nama);
+        // if ($request->hasFile('hero_app_image')) {
+        //     $file = $request->file('hero_app_image');
+        //     $nama = 'logo-' . date('Y-m-dHis') . '.' . $file->getClientOriginalExtension();
+        //     $file->move(public_path('/img'), $nama);
 
-            $landingpage->hero_app_image = "/img/$nama";
-        }
-        if ($request->hasFile('download_hero_app_image')) {
-            $file = $request->file('download_hero_app_image');
-            $nama = 'logo-' . date('Y-m-dHis') . '.' . $file->getClientOriginalExtension();
-            $file->move(public_path('/img'), $nama);
+        //     $landingpage->hero_app_image = "/img/$nama";
+        // }
+        // if ($request->hasFile('download_hero_app_image')) {
+        //     $file = $request->file('download_hero_app_image');
+        //     $nama = 'logo-' . date('Y-m-dHis') . '.' . $file->getClientOriginalExtension();
+        //     $file->move(public_path('/img'), $nama);
 
-            $landingpage->download_app_image = "/img/$nama";
-        }
+        //     $landingpage->download_app_image = "/img/$nama";
+        // }
 
         $landingpage->update();
         return redirect('landing_page');
