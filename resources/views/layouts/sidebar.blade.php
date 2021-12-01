@@ -38,12 +38,12 @@
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="{{ route('term') }}">
                     <i class="fa fa-file-text-o"></i> <span>Term of Use</span>
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="{{ route('privacy') }}">
                     <i class="fa fa-file-text-o"></i> <span>Privacy Policy</span>
                 </a>
             </li>

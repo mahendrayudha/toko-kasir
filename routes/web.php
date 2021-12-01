@@ -5,6 +5,7 @@ use App\Http\Controllers\{
     DashboardController,
     LandingPageController,
     LandingView,
+    PrivacyPolicy,
     SettingController,
 };
 use Illuminate\Support\Facades\Route;
@@ -29,6 +30,12 @@ Route::group(['middleware' => 'auth'], function () {
 
     Route::get('/banner', [BannerController::class, 'index'])->name('banner');
     Route::post('/banner/update', [BannerController::class, 'update']);
+
+    Route::get('/privacy', [PrivacyPolicy::class, 'index'])->name('privacy');
+    Route::post('/privacy/update', [PrivacyPolicy::class, 'update']);
+
+    Route::get('/term', [PrivacyPolicy::class, 'term'])->name('term');
+    Route::post('/term/updateterm', [PrivacyPolicy::class, 'updateterm']);
 
     Route::get('/landing_page', [LandingPageController::class, 'index'])->name('landingpage');
     Route::post('/landing_page/update', [LandingPageController::class, 'update']);
