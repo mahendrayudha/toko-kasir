@@ -74,50 +74,6 @@
                 </nav>
             </div>
         </div>
-        <!---- navbar end--->
-        <div class="header-hero" data-scroll-index="0">
-            <!---- home star ------>
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
-            <div class="shape shape-4"></div>
-            <div class="shape shape-5"></div>
-            <div class="shape shape-6"></div>
-            <div class="container">
-                <div class="row align-items-center justify-content-center justify-content-lg-between">
-                    <div class="col-lg-6 col-md-10">
-                        <div class="header-hero-content">
-                            <h1 class="header-title wow fadeInLeftBig" data-wow-duration="3s" data-wow-delay="0.2s">
-                                {{ $data->hero_title }}
-                            </h1>
-                            <p class="text wow fadeInLeftBig" data-wow-duration="3s" data-wow-delay="0.4s">
-                                {{ $data->hero_subtitle }}
-                            </p>
-                            <ul class="d-flex justify-content-center">
-                                <li>
-                                    <a href="/contact-us" class="main-btn wow fadeInLeftBig" data-wow-duration="3s" data-wow-delay="0.8s">
-                                        Contact Us
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="header-image">
-                            <img src="{{ url('') . $data->hero_app_image }}" alt=""
-                                class="image-1  wow fadeInRightBig" data-wow-duration="3s" data-wow-delay="0.5s">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="header-shape-1"></div>
-                <div class="header-shape-2">
-                    <img src="assets/img/header/header-shape-2.svg" alt="">
-                </div>
-            </div>
-        </div>
-        <!---- home star ------>
     </header>
     <!--------   Header End ----  -->
 
@@ -125,25 +81,33 @@
     <section id="download" class="download-area pt-70 pb-40" data-scroll-index="2">
         <div class="container">
             <div class="row justify-content-center align-items-center">
-                <div class="col-lg-6 col-md-9">
-                    <div class="download-image mt-50 wow fadeInLeftBig" data-wow-duration="3s" data-wow-delay="0.5s">
+                <div class="col-lg-6 col-md-9 d-flex justify-content-center">
+                    <div class="download-image-cu mt-50 wow fadeInLeftBig">
                         <div class="download-shape-1"></div>
                         <img src="{{ url('http://127.0.0.1:8000') . $data->download_app_image }}" alt=""
                             class="image-3">
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="download-content mt-45 wow fadeInRightBig" data-wow-duration="3s" data-wow-delay="0.5s">
-                        <h1 class="title"> {{ $data->download_title }} </h1>
-                        <p class="text"> {{ $data->download_subtitle }} </p>
-                        <ul>
-                            <li><a href="" class="app-store">
-                                    <img src="landingpage/assets/img/download/app-store.png" alt="">
-                                </a></li>
-                            <li><a href="" class="play-store">
-                                    <img src="landingpage/assets/img/download/play-store.png" alt="">
-                                </a></li>
-                        </ul>
+                    <div class="download-content mt-45 wow fadeInRightBig">
+                        <h1 class="title">Contact Us</h1>
+                        <form action="" method="post">
+                            <div class="row">
+                                <div class="form-group col-md-6 mt-input">
+                                    <input type="text" name="name" class="form-control" id="fullname" placeholder="Full Name" />
+                                </div>
+                                <div class="form-group col-md-6 mt-input">
+                                    <input type="email" class="form-control" name="email" id="email" placeholder="Email" />
+                                </div>
+                            </div>
+                            <div class="form-group mt-input">
+                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" />
+                            </div>
+                            <div class="form-group mt-input">
+                                <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+                            </div>
+                            <button type="submit" name="submit" id="submit" class="btn btn-primary mt-input">Send Message</button>
+                        </form>
                     </div>
                 </div>
             </div>

@@ -75,43 +75,37 @@
             </div>
         </div>
         <!---- navbar end--->
-        <div class="header-hero" data-scroll-index="0">
+        <div class="header-hero-sub-page">
             <!---- home star ------>
             <div class="shape shape-1"></div>
             <div class="shape shape-2"></div>
             <div class="shape shape-3"></div>
-            <div class="shape shape-4"></div>
-            <div class="shape shape-5"></div>
-            <div class="shape shape-6"></div>
             <div class="container">
-                <div class="row align-items-center justify-content-center justify-content-lg-between">
-                    <div class="col-lg-6 col-md-10">
-                        <div class="header-hero-content">
-                            <h1 class="header-title wow fadeInLeftBig" data-wow-duration="3s" data-wow-delay="0.2s">
-                                {{ $data->hero_title }}
+                <div class="row  justify-content-center justify-content-lg-between">
+                    <div class="col-lg-12 col-md-12 mt-6">
+                        <div class="header-hero-content mt-6">
+                            <h1 class="header-title wow fadeInLeftBig mt-6" data-wow-duration="3s" data-wow-delay="0.2s">
+                                Privacy Policy
                             </h1>
                             <p class="text wow fadeInLeftBig" data-wow-duration="3s" data-wow-delay="0.4s">
-                                {{ $data->hero_subtitle }}
+                            GET -> Deskripsi Privacy Policy
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor, eros semper vestibulum rhoncus, tortor sapien viverra nunc, quis mollis dui ante a nunc. Nam porta neque et lorem placerat, non ultrices velit egestas. Ut orci massa, sodales eget nunc eu, rhoncus pulvinar eros. Aenean pulvinar erat vitae viverra laoreet. Duis vulputate sit amet elit in semper. Fusce tellus lectus, convallis eu eros eu, laoreet vulputate quam. Donec gravida a quam non tincidunt.
+Proin eu nulla efficitur, congue velit elementum, posuere est. Sed facilisis libero id mauris viverra ultricies. Mauris auctor ac dui et posuere. Maecenas scelerisque suscipit viverra. Vestibulum pellentesque pellentesque felis, ut faucibus felis rutrum non. Etiam quis elit imperdiet, rutrum ligula sed, tempus nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut magna felis, fringilla ut urna non, bibendum fringilla neque. Mauris mollis auctor mi, ac vehicula metus bibendum ut.
+Maecenas molestie sem tortor. Sed placerat magna non tortor semper, congue scelerisque leo posuere. Nam auctor risus sapien, nec tincidunt est lacinia quis. In hac habitasse platea dictumst. Phasellus elementum mattis urna id congue. Donec non est elementum, lobortis justo quis, ornare tellus. Curabitur at est in enim vestibulum tempus id at est. Maecenas elit sapien, congue et est quis, convallis lacinia diam. Donec commodo sollicitudin metus, sit amet aliquam nisi facilisis non. Duis cursus ligula in sollicitudin suscipit. Vestibulum erat mauris, convallis vel nulla vitae, mollis rutrum lacus. Nunc ornare tortor eu diam suscipit, a ornare nisl facilisis. Nunc a ultrices leo. Maecenas enim sem, fringilla at pellentesque in, ornare non augue. Curabitur risus quam, posuere sit amet enim aliquet, imperdiet hendrerit arcu.
+Sed pulvinar, quam id varius mattis, metus sem feugiat urna, congue vestibulum mauris sapien at metus. Maecenas tincidunt nibh enim, quis lacinia ante lacinia eget. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla semper vulputate cursus. Aenean ante ligula, facilisis eleifend lectus non, malesuada porta eros. Morbi tortor est, lacinia a arcu vitae, pharetra cursus augue. Nam vehicula ac mauris sit amet euismod. Nunc bibendum euismod urna a dignissim. Praesent sed faucibus nisl, eget congue eros. Nam commodo eros eleifend sem egestas facilisis. Sed a fringilla sem, a ultrices tortor.
+Phasellus rhoncus accumsan luctus. Quisque pellentesque viverra velit. Donec nec turpis id sapien imperdiet molestie et non justo. Quisque ut ante pulvinar, pulvinar enim vestibulum, faucibus ipsum. Sed lacus nulla, consectetur in aliquam in, cursus non enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus imperdiet sollicitudin arcu, et mattis lectus varius ut. Vestibulum ut blandit massa. Ut eleifend dignissim vulputate. Morbi eget tincidunt lorem. Ut at fringilla lorem. Morbi pulvinar non tortor id placerat. Sed vulputate nisl lobortis ante imperdiet finibus. Aenean eleifend quam elementum efficitur rutrum. Proin sed lacinia dui.
+
+Proin eu nulla efficitur, congue velit elementum, posuere est. Sed facilisis libero id mauris viverra ultricies. Mauris auctor ac dui et posuere. Maecenas scelerisque suscipit viverra. Vestibulum pellentesque pellentesque felis, ut faucibus felis rutrum non. Etiam quis elit imperdiet, rutrum ligula sed, tempus nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus. Ut magna felis, fringilla ut urna non, bibendum fringilla neque. Mauris mollis auctor mi, ac vehicula metus bibendum ut.
+Maecenas molestie sem tortor. Sed placerat magna non tortor semper, congue scelerisque leo posuere. Nam auctor risus sapien, nec tincidunt est lacinia quis. In hac habitasse platea dictumst. Phasellus elementum mattis urna id congue. Donec non est elementum, lobortis justo quis, ornare tellus. Curabitur at est in enim vestibulum tempus id at est. Maecenas elit sapien, congue et est quis, convallis lacinia diam. Donec commodo sollicitudin metus, sit amet aliquam nisi facilisis non. Duis cursus ligula in sollicitudin suscipit. Vestibulum erat mauris, convallis vel nulla vitae, mollis rutrum lacus. Nunc ornare tortor eu diam suscipit, a ornare nisl facilisis. Nunc a ultrices leo. Maecenas enim sem, fringilla at pellentesque in, ornare non augue. Curabitur risus quam, posuere sit amet enim aliquet, imperdiet hendrerit arcu.
+Sed pulvinar, quam id varius mattis, metus sem feugiat urna, congue vestibulum mauris sapien at metus. Maecenas tincidunt nibh enim, quis lacinia ante lacinia eget. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla semper vulputate cursus. Aenean ante ligula, facilisis eleifend lectus non, malesuada porta eros. Morbi tortor est, lacinia a arcu vitae, pharetra cursus augue. Nam vehicula ac mauris sit amet euismod. Nunc bibendum euismod urna a dignissim. Praesent sed faucibus nisl, eget congue eros. Nam commodo eros eleifend sem egestas facilisis. Sed a fringilla sem, a ultrices tortor.
+Phasellus rhoncus accumsan luctus. Quisque pellentesque viverra velit. Donec nec turpis id sapien imperdiet molestie et non justo. Quisque ut ante pulvinar, pulvinar enim vestibulum, faucibus ipsum. Sed lacus nulla, consectetur in aliquam in, cursus non enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus imperdiet sollicitudin arcu, et mattis lectus varius ut. Vestibulum ut blandit massa. Ut eleifend dignissim vulputate. Morbi eget tincidunt lorem. Ut at fringilla lorem. Morbi pulvinar non tortor id placerat. Sed vulputate nisl lobortis ante imperdiet finibus. Aenean eleifend quam elementum efficitur rutrum. Proin sed lacinia dui.
                             </p>
-                            <ul class="d-flex justify-content-center">
-                                <li>
-                                    <a href="/contact-us" class="main-btn wow fadeInLeftBig" data-wow-duration="3s" data-wow-delay="0.8s">
-                                        Contact Us
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6">
-                        <div class="header-image">
-                            <img src="{{ url('') . $data->hero_app_image }}" alt=""
-                                class="image-1  wow fadeInRightBig" data-wow-duration="3s" data-wow-delay="0.5s">
                         </div>
                     </div>
                 </div>
             </div>
             <div class="container">
-                <div class="header-shape-1"></div>
+                <div></div>
                 <div class="header-shape-2">
                     <img src="assets/img/header/header-shape-2.svg" alt="">
                 </div>
@@ -121,35 +115,7 @@
     </header>
     <!--------   Header End ----  -->
 
-    <!-- ----------- Download Section Start ------- -->
-    <section id="download" class="download-area pt-70 pb-40" data-scroll-index="2">
-        <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-lg-6 col-md-9">
-                    <div class="download-image mt-50 wow fadeInLeftBig" data-wow-duration="3s" data-wow-delay="0.5s">
-                        <div class="download-shape-1"></div>
-                        <img src="{{ url('http://127.0.0.1:8000') . $data->download_app_image }}" alt=""
-                            class="image-3">
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="download-content mt-45 wow fadeInRightBig" data-wow-duration="3s" data-wow-delay="0.5s">
-                        <h1 class="title"> {{ $data->download_title }} </h1>
-                        <p class="text"> {{ $data->download_subtitle }} </p>
-                        <ul>
-                            <li><a href="" class="app-store">
-                                    <img src="landingpage/assets/img/download/app-store.png" alt="">
-                                </a></li>
-                            <li><a href="" class="play-store">
-                                    <img src="landingpage/assets/img/download/play-store.png" alt="">
-                                </a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ----------- Download Section End ------- -->
+    
     <!-- --------------Footer Section Start ------- -->
     <footer id="contactUs" class="footer-area">
         <div class="footer-shape shape-1"></div>
@@ -188,7 +154,7 @@
                                 <ul class="link">
                                     <li><a href="/">Home</a></li>
                                     <li><a href="/contact-us">Contact Us</a></li>
-                                    <li><a href="#download">Download</a></li>
+                                    <li><a href="/#download">Download</a></li>
                                     <li><a href="/terms-of-use">Terms of Use</a></li>
                                     <li><a href="/privacy-policy">Privacy Policy</a></li>
                                 </ul>

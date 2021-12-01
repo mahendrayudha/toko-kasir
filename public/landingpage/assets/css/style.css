@@ -61,6 +61,14 @@ span {
     color: #fe5f59;
 }
 
+.mt-6 {
+    margin-top: 60px;
+}
+
+.mt-input {
+    margin-top: 24px;
+}
+
 /* ------------ all button css ---------- */
 
 .main-btn {
@@ -383,6 +391,12 @@ span {
     background-position: bottom center;
 }
 
+.header-hero-sub-page {
+    position: relative;
+    top: 0;
+    background-position: bottom center;
+}
+
 .header-hero .shape {
     position: absolute;
 }
@@ -508,9 +522,14 @@ span {
     animation: bounceTop-1 3s ease infinite;
 }
 
+.header-image-sub-image {
+    padding-top: 80px;
+    animation: bounceTop-1 3s ease infinite;
+}
+
 @media only screen and (min-width: 768px) and (max-width: 991px),
 (max-width: 767px) {
-    .header-image img {
+    .header-image, .download-image-cu img {
         height: 0;
     }
 }
@@ -888,6 +907,23 @@ span {
 }
 
 .download-area .download-image .image-3 {
+    position: relative;
+    max-width: 350px;
+    padding-top: 65px;
+    padding-left: 60px;
+    padding-bottom: 60px;
+}
+
+.download-area .download-image-cu .download-shape-1 {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background-color: #b3d7ff;
+    border-radius: 50%;
+    z-index: -1;
+}
+
+.download-area .download-image-cu .image-3 {
     position: relative;
     max-width: 350px;
     padding-top: 65px;
