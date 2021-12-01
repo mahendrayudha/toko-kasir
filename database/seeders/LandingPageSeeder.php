@@ -24,6 +24,8 @@ class LandingPageSeeder extends Seeder
             'download_title' => 'download title',
             'download_subtitle' => 'download subtitle',
             'footer_desc' => 'footer',
+            'url_appstore' => 'http://google.com',
+            'url_googleplay' => 'http://google.com',
         ]);
     }
 }

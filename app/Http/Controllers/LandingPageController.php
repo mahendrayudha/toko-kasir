@@ -74,6 +74,8 @@ class LandingPageController extends Controller
         $landingpage->download_title = $request->download_title;
         $landingpage->download_subtitle = $request->download_subtitle;
         $landingpage->footer_desc = $request->footer_desc;
+        $landingpage->url_appstore = $request->url_appstore;
+        $landingpage->url_googleplay = $request->url_googleplay;
 
         // if ($request->hasFile('path_logo')) {
         //     $file = $request->file('path_logo');

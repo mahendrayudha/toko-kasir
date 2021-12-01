@@ -17,7 +17,8 @@ class DatabaseSeeder extends Seeder
         $this->call([
             SettingTableSeeder::class,
             UserTableSeeder::class,
-            LandingPageSeeder::class
+            LandingPageSeeder::class,
+            TermAndPrivacy::class
         ]);
     }
 }
