@@ -18,6 +18,7 @@ class TermsOfUsePageController extends Controller
     {
         $data['data'] = LandingPage::findOrFail(1);
         $data['dataset'] = Setting::first();
+        $data['term'] = Privacy::findOrFail(2);
         return view('terms-of-use.index', $data);
     }
 
@@ -63,7 +64,7 @@ class TermsOfUsePageController extends Controller
      */
     public function update(Request $request)
     {
-        // 
+        //
     }
 
     /**

@@ -18,6 +18,7 @@ class PrivacyPolicyPageCOntroller extends Controller
     {
         $data['data'] = LandingPage::findOrFail(1);
         $data['dataset'] = Setting::first();
+        $data['privacy'] = Privacy::findOrFail(2);
         return view('privacy-policy.index', $data);
     }
 
@@ -63,7 +64,7 @@ class PrivacyPolicyPageCOntroller extends Controller
      */
     public function update(Request $request)
     {
-        // 
+        //
     }
 
     /**
