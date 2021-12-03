@@ -84,29 +84,39 @@
                 <div class="col-lg-6 col-md-9 d-flex justify-content-center">
                     <div class="download-image-cu mt-50 wow fadeInLeftBig">
                         <div class="download-shape-1"></div>
-                        <img src="{{ url('http://127.0.0.1:8000') . $data->download_app_image }}" alt=""
-                            class="image-3">
+                        <img src="{{ url('') . $data->download_app_image }}" alt="" class="image-3">
                     </div>
                 </div>
                 <div class="col-lg-6">
+                    @if ($message = Session::get('success'))
+                        <div class="alert alert-success alert-block">
+                            {{ $message }}
+                        </div>
+                    @endif
                     <div class="download-content mt-45 wow fadeInRightBig">
                         <h1 class="title">Contact Us</h1>
-                        <form action="" method="post">
+                        <form action="/contact-us/store" method="post">
+                            @csrf
                             <div class="row">
                                 <div class="form-group col-md-6 mt-input">
-                                    <input type="text" name="name" class="form-control" id="fullname" placeholder="Full Name" />
+                                    <input type="text" name="name" class="form-control" id="name"
+                                        placeholder="Full Name" />
                                 </div>
                                 <div class="form-group col-md-6 mt-input">
-                                    <input type="email" class="form-control" name="email" id="email" placeholder="Email" />
+                                    <input type="email" class="form-control" name="email" id="email"
+                                        placeholder="Email" />
                                 </div>
                             </div>
                             <div class="form-group mt-input">
-                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" />
+                                <input type="text" class="form-control" name="subject" id="subject"
+                                    placeholder="Subject" />
                             </div>
                             <div class="form-group mt-input">
-                                <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
+                                <textarea class="form-control" name="deskripsi" rows="5"
+                                    placeholder="Message"></textarea>
                             </div>
-                            <button type="submit" name="submit" id="submit" class="btn btn-primary mt-input">Send Message</button>
+                            <button type="submit" name="submit" id="submit" class="btn btn-primary mt-input">Send
+                                Message</button>
                         </form>
                     </div>
                 </div>
@@ -128,7 +138,7 @@
                     <div class="col-lg-4 col-md-4">
                         <div class="footer-about mt-50">
                             <a href="" class="logo">
-                                <img src="{{ url('http://127.0.0.1:8000') . $data->logo }}" alt="">
+                                <img src="{{ url('') . $data->logo }}" alt="">
                             </a>
                             <p class="text">{{ $data->footer_desc }}
                             </p>
@@ -210,12 +220,12 @@
                         <div class="download-content">
                             <ul>
                                 <li>
-                                    <a href="" class="app-store">
+                                    <a href="{{ $data->url_appstore }}" class="app-store">
                                         <img src="landingpage/assets/img/download/app-store.png" alt="">
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="" class="play-store">
+                                    <a href="{{ $data->url_googleplay }}" class="play-store">
                                         <img src="landingpage/assets/img/download/play-store.png" alt="">
                                     </a>
                                 </li>

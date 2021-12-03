@@ -95,7 +95,8 @@
                             </p>
                             <ul class="d-flex justify-content-center">
                                 <li>
-                                    <a href="/contact-us" class="main-btn wow fadeInLeftBig" data-wow-duration="3s" data-wow-delay="0.8s">
+                                    <a href="/contact-us" class="main-btn wow fadeInLeftBig" data-wow-duration="3s"
+                                        data-wow-delay="0.8s">
                                         Contact Us
                                     </a>
                                 </li>
@@ -128,8 +129,7 @@
                 <div class="col-lg-6 col-md-9">
                     <div class="download-image mt-50 wow fadeInLeftBig" data-wow-duration="3s" data-wow-delay="0.5s">
                         <div class="download-shape-1"></div>
-                        <img src="{{ url('http://127.0.0.1:8000') . $data->download_app_image }}" alt=""
-                            class="image-3">
+                        <img src="{{ url('') . $data->download_app_image }}" alt="" class="image-3">
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -137,10 +137,10 @@
                         <h1 class="title"> {{ $data->download_title }} </h1>
                         <p class="text"> {{ $data->download_subtitle }} </p>
                         <ul>
-                            <li><a href="" class="app-store">
+                            <li><a href="{{ $data->url_appstore }}" class="app-store">
                                     <img src="landingpage/assets/img/download/app-store.png" alt="">
                                 </a></li>
-                            <li><a href="" class="play-store">
+                            <li><a href="{{ $data->url_googleplay }}" class="play-store">
                                     <img src="landingpage/assets/img/download/play-store.png" alt="">
                                 </a></li>
                         </ul>
@@ -164,7 +164,7 @@
                     <div class="col-lg-4 col-md-4">
                         <div class="footer-about mt-50">
                             <a href="" class="logo">
-                                <img src="{{ url('http://127.0.0.1:8000') . $data->logo }}" alt="">
+                                <img src="{{ url('') . $data->logo }}" alt="">
                             </a>
                             <p class="text">{{ $data->footer_desc }}
                             </p>
@@ -246,12 +246,12 @@
                         <div class="download-content">
                             <ul>
                                 <li>
-                                    <a href="" class="app-store">
+                                    <a href="{{ $data->url_appstore }}" class="app-store">
                                         <img src="landingpage/assets/img/download/app-store.png" alt="">
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="" class="play-store">
+                                    <a href="{{ $data->url_googleplay }}" class="play-store">
                                         <img src="landingpage/assets/img/download/play-store.png" alt="">
                                     </a>
                                 </li>

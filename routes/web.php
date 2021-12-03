@@ -30,11 +30,15 @@ Route::get('/privacy-policy', [PrivacyPolicyPageCOntroller::class, 'index'])->na
 Route::get('/terms-of-use', [TermsOfUsePageController::class, 'index'])->name('terms-of-use');
 
 Route::get('/contact-us', [ContactUsPageController::class, 'index'])->name('contact-us');
+Route::post('/contact-us/store', [ContactUsPageController::class, 'store']);
 Route::get('/log', function () {
     return redirect()->route('login');
 });
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard');
+    Route::get('/contact', [ContactUsPageController::class, 'show'])->name('contact');
+    Route::get('/contact/destroy/{id}', [ContactUsPageController::class, 'destroy']);
+    Route::get('/contact/detail/{id}', [ContactUsPageController::class, 'detail']);
 
     Route::get('/banner', [BannerController::class, 'index'])->name('banner');
     Route::post('/banner/update', [BannerController::class, 'update']);

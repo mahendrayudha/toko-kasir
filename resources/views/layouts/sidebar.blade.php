@@ -22,7 +22,7 @@
                 </a>
             </li>
             <li>
-                <a href="">
+                <a href="{{ route('contact') }}">
                     <i class="fa fa-dashboard"></i> <span>Contact Us</span>
                 </a>
             </li>

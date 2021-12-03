@@ -121,7 +121,7 @@
                     <div class="col-lg-4 col-md-4">
                         <div class="footer-about mt-50">
                             <a href="" class="logo">
-                                <img src="{{ url('http://127.0.0.1:8000') . $data->logo }}" alt="">
+                                <img src="{{ url('') . $data->logo }}" alt="">
                             </a>
                             <p class="text">{{ $data->footer_desc }}
                             </p>
@@ -203,12 +203,12 @@
                         <div class="download-content">
                             <ul>
                                 <li>
-                                    <a href="" class="app-store">
+                                    <a href="{{ $data->url_appstore }}" class="app-store">
                                         <img src="landingpage/assets/img/download/app-store.png" alt="">
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="" class="play-store">
+                                    <a href="{{ $data->url_googleplay }}" class="play-store">
                                         <img src="landingpage/assets/img/download/play-store.png" alt="">
                                     </a>
                                 </li>

@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\ContactUs;
 use App\Models\Privacy;
 use App\Models\LandingPage;
 use App\Models\Setting;
@@ -29,7 +30,10 @@ class ContactUsPageController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $data = $request->all();
+        $data['status'] = 1;
+        ContactUs::create($data);
+        return redirect('contact-us')->with('success', 'Berhasil kirim masukkan');
     }
 
     /**
@@ -40,7 +44,8 @@ class ContactUsPageController extends Controller
      */
     public function show()
     {
-        //
+        $data['contact'] = ContactUs::latest()->get();
+        return view('contact-us.admin', $data);
     }
 
     /**
@@ -49,9 +54,13 @@ class ContactUsPageController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function detail($id)
     {
-        //
+        $contact = ContactUs::findOrFail($id);
+        $contact->status = 2;
+        $contact->update();
+        $data['contact_us'] = ContactUs::findOrFail($id);
+        return view('contact-us.detail', $data);
     }
 
     /**
@@ -63,7 +72,7 @@ class ContactUsPageController extends Controller
      */
     public function update(Request $request)
     {
-        // 
+        //
     }
 
     /**
@@ -72,8 +81,10 @@ class ContactUsPageController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy()
+    public function destroy($id)
     {
-        //
+        $data = ContactUs::findOrFail($id);
+        $data->delete();
+        return redirect('contact')->with('success', 'Berhasil Hapus Data');
     }
 }
