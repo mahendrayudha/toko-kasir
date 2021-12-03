@@ -77,7 +77,7 @@ class PrivacyPolicy extends Controller
         $priv->deskripsi = $request->deskripsi;
         // echo $request->deskripsi;
         $priv->update();
-        return redirect('privacy');
+        return redirect('privacy')->with('success', 'Berhasil Ubah Data');
     }
 
     public function updateterm(Request $request)
@@ -86,7 +86,7 @@ class PrivacyPolicy extends Controller
         $priv->deskripsi = $request->deskripsi;
         // echo $request->deskripsi;
         $priv->update();
-        return redirect('term');
+        return redirect('term')->with('success', 'Berhasil Ubah Data');
     }
 
     /**

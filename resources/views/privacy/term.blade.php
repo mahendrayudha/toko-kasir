@@ -16,13 +16,18 @@
                 <form action="/term/updateterm" method="post" class="form-setting" data-toggle="validator">
                     @csrf
                     <div class="box-body">
-                        <div class="alert alert-info alert-dismissible" style="display: none;">
+                        @if ($message = Session::get('success'))
+                            <div class="alert alert-success alert-block">
+                                {{ $message }}
+                            </div>
+                        @endif
+                        {{-- <div class="alert alert-info alert-dismissible" style="display: none;">
                             <button type="button" class="close" data-dismiss="alert"
                                 aria-hidden="true">&times;</button>
                             <i class="icon fa fa-check"></i> Perubahan berhasil disimpan
-                        </div>
+                        </div> --}}
                         <div class="form-group row">
-                            <label for="path_logo" class="col-lg-2 control-label">Privacy</label>
+                            <label for="path_logo" class="col-lg-2 control-label">Term Use</label>
                             <div class="col-lg-12">
                                 <textarea name="deskripsi" class="form-control" id="deskripsi" rows="3"
                                     required>{{ $term->deskripsi }}</textarea>
