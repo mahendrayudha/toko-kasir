@@ -49,7 +49,7 @@
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="#">
+                        <a class="navbar-brand" href="/">
                             <img class="image" src="{{ url('') . $data->logo }}" alt="">
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -63,7 +63,7 @@
                                     <a class="nav-link" data-scroll-nav="0" aria-current="page" href="/">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" data-scroll-nav="1" href="#download">Download</a>
+                                    <a class="nav-link" data-scroll-nav="1" href="/#download">Download</a>
                                 </li>
                                 <li class="nav-item">
                                     <a class="nav-link" data-scroll-nav="2" href="/login">Login</a>
@@ -125,7 +125,7 @@
     </section>
     <!-- ----------- Download Section End ------- -->
     <!-- --------------Footer Section Start ------- -->
-    <footer id="contactUs" class="footer-area">
+    {{-- <footer id="contactUs" class="footer-area">
         <div class="footer-shape shape-1"></div>
         <div class="footer-shape shape-2"></div>
         <div class="footer-shape shape-3"></div>
@@ -185,7 +185,7 @@
                                         <div class="contact-info">
                                             <div class="info-content media-body">
                                                 <p class="text">
-                                                    <a href="https://mail.google.com/"><i class="far fa-envelope"></i>
+                                                    <a href="mailto:info@avatar.co.id"><i class="far fa-envelope"></i>
                                                         info@avatar.co.id
                                                     </a>
                                                 </p>
@@ -252,7 +252,7 @@
                     </div>
                 </div>
             </div>
-    </footer>
+    </footer> --}}
     <!-- --------------Footer Section End ------- -->
 
 

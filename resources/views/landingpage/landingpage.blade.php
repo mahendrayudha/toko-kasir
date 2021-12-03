@@ -49,7 +49,7 @@
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <div class="container-fluid">
-                        <a class="navbar-brand" href="#">
+                        <a class="navbar-brand" href="/">
                             <img class="image" src="{{ url('') . $data->logo }}" alt="">
                         </a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -211,7 +211,7 @@
                                         <div class="contact-info">
                                             <div class="info-content media-body">
                                                 <p class="text">
-                                                    <a href="https://mail.google.com/"><i class="far fa-envelope"></i>
+                                                    <a href="mailto:info@avatar.co.id"><i class="far fa-envelope"></i>
                                                         info@avatar.co.id
                                                     </a>
                                                 </p>
