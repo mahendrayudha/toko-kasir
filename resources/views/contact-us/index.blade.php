@@ -65,9 +65,9 @@
                                 <li class="nav-item">
                                     <a class="nav-link" data-scroll-nav="1" href="/#download">Download</a>
                                 </li>
-                                <li class="nav-item">
+                                {{-- <li class="nav-item">
                                     <a class="nav-link" data-scroll-nav="2" href="/login">Login</a>
-                                </li>
+                                </li> --}}
                             </ul>
                         </div>
                     </div>
