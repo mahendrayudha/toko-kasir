@@ -23,7 +23,7 @@
                 <div class="box-body">
                     <div class="row">
                         <div class="col-lg-12">
-                            <h3>Selamat Datang Dihalaman Administrator</h3>
+                            <h3>Selamat Datang di Halaman Administrator</h3>
                             <!-- /.chart-responsive -->
                         </div>
                     </div>
