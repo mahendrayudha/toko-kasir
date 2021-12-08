@@ -23,7 +23,7 @@
                     </div>
                 @endif
                 <div class="datatable">
-                    <table class="table table-striped" id="dataTable" width="100%" cellspacing="0">
+                    <table class="table table-striped" id="contact_us" width="100%" cellspacing="0">
                         <thead>
                             <tr>
                                 <th>Nomor</th>
@@ -42,10 +42,10 @@
                                     <td>{{ $data->email }}</td>
                                     <td>
                                         <?php if($data->status == 1){?>
-                                        <span class="badge bg-primary">Belum Dibaca</span>
+                                        <span class="badge btn-danger">Belum Dibaca</span>
                                         <?php } ?>
                                         <?php if($data->status == 2){?>
-                                        <span class="badge bg-secondary">Telah Dibaca</span>
+                                        <span class="badge btn-primary">Telah Dibaca</span>
                                         <?php } ?>
                                     </td>
                                     <td>
@@ -64,3 +64,18 @@
         </div>
     </div>
 @endsection
+@push('after-script')
+    <script>
+        $(document).ready(function() {
+            $('#contact_us').dataTable({
+                "paging": true,
+                "ordering": true,
+                "searching": true,
+                "info": true
+            });
+        });
+   </script>
+   <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js" crossorigin="anonymous"></script>
+   <script src="https://cdn.datatables.net/1.10.20/js/dataTables.bootstrap4.min.js" crossorigin="anonymous"></script>
+   <script src="{{ asset('assets') }}/js/datatables-demo.js"></script>
+@endpush
