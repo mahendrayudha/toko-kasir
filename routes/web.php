@@ -10,6 +10,7 @@ use App\Http\Controllers\{
     PrivacyPolicyPageController,
     SettingController,
     TermsOfUsePageController,
+    UserController,
 };
 use Illuminate\Support\Facades\Route;
 
@@ -57,4 +58,5 @@ Route::group(['middleware' => 'auth'], function () {
     // MAIN WEB
     Route::get('/landing_page', [LandingPageController::class, 'index'])->name('landingpage');
     Route::post('/landing_page/update', [LandingPageController::class, 'update']);
+    Route::post('/user/logout', [UserController::class, 'logout'])->name('logout');
 });
