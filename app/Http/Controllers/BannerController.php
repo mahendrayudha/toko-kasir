@@ -95,7 +95,7 @@ class BannerController extends Controller
         }
 
         $landingpage->update();
-        return redirect('banner');
+        return redirect('banner')->with('success', 'Berhasil Ubah Data');
     }
 
     /**

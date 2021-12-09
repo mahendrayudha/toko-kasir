@@ -101,7 +101,7 @@ class LandingPageController extends Controller
         // }
 
         $landingpage->update();
-        return redirect('landing_page');
+        return redirect('landing_page')->with('success', 'Berhasi Ubah Data');
     }
 
     /**
