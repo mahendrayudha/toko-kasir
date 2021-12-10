@@ -26,6 +26,9 @@ class LandingPageSeeder extends Seeder
             'footer_desc' => 'footer',
             'url_appstore' => 'http://google.com',
             'url_googleplay' => 'http://google.com',
+            'url_fb' => 'http://google.com',
+            'url_ig' => 'http://google.com',
+            'url_twitter' => 'http://google.com',
         ]);
     }
 }

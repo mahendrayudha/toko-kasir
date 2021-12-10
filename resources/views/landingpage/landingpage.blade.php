@@ -169,13 +169,10 @@
                             <p class="text">{{ $data->footer_desc }}
                             </p>
                             <ul class="social">
-                                <li><a href="https://www.facebook.com/avatarsolution"><i
-                                            class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="https://twitter.com/avatarsolution"><i class="fab fa-twitter"></i></a></li>
-                                <li><a href="https://www.instagram.com/avatarsolution"><i
-                                            class="fab fa-instagram"></i></a></li>
-                                <li><a href="https://www.linkedin.com/company/avatar-solutions"><i
-                                            class="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="{{ $data->url_fb }}"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="{{ $data->url_twitter }}"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="{{ $data->url_ig }}"><i class="fab fa-instagram"></i></a></li>
+
                             </ul>
                         </div>
                     </div>

@@ -78,6 +78,30 @@
                                 <span class="help-block with-errors"></span>
                             </div>
                         </div>
+                        <div class="form-group row">
+                            <label for="url_appstore" class="col-lg-2 control-label">Url App Store</label>
+                            <div class="col-lg-6">
+                                <textarea name="url_fb" class="form-control" id="url_fb" rows="3"
+                                    required>{{ $data->url_fb }}</textarea>
+                                <span class="help-block with-errors"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="url_appstore" class="col-lg-2 control-label">Url App Store</label>
+                            <div class="col-lg-6">
+                                <textarea name="url_ig" class="form-control" id="url_ig" rows="3"
+                                    required>{{ $data->url_ig }}</textarea>
+                                <span class="help-block with-errors"></span>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="url_appstore" class="col-lg-2 control-label">Url App Store</label>
+                            <div class="col-lg-6">
+                                <textarea name="url_twitter" class="form-control" id="url_twitter" rows="3"
+                                    required>{{ $data->url_twitter }}</textarea>
+                                <span class="help-block with-errors"></span>
+                            </div>
+                        </div>
                     </div>
                     <div class="box-footer text-right">
                         <button class="btn btn-sm btn-flat btn-primary"><i class="fa fa-save"></i> Simpan

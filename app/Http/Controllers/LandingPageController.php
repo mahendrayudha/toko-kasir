@@ -76,6 +76,9 @@ class LandingPageController extends Controller
         $landingpage->footer_desc = $request->footer_desc;
         $landingpage->url_appstore = $request->url_appstore;
         $landingpage->url_googleplay = $request->url_googleplay;
+        $landingpage->url_fb = $request->url_fb;
+        $landingpage->url_twitter = $request->url_twitter;
+        $landingpage->url_ig = $request->url_ig;
 
         // if ($request->hasFile('path_logo')) {
         //     $file = $request->file('path_logo');
