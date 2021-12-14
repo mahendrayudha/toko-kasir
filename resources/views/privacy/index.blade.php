@@ -45,3 +45,15 @@
         </div>
     </div>
 @endsection
+@push('scripts')
+    <script src="https://cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace('deskripsi');
+        CKEDITOR.config.autoParagraph = false;
+    </script>
+    <style>
+        #deskripsi {
+            width: 100% !important;
+        }
+    </style>
+@endpush

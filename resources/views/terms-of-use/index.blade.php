@@ -89,7 +89,7 @@
                                 Terms of Use
                             </h1>
                             <p class="text wow fadeInLeftBig" data-wow-duration="3s" data-wow-delay="0.4s">
-                                {{ $term->deskripsi }} </p>
+                                {!! $term->deskripsi !!} </p>
                         </div>
                     </div>
                 </div>

@@ -89,7 +89,7 @@
                                 Privacy Policy
                             </h1>
                             <p class="text wow fadeInLeftBig" data-wow-duration="3s" data-wow-delay="0.4s">
-                                {{ $privacy->deskripsi }}
+                                {!! $privacy->deskripsi !!}
                             </p>
                         </div>
                     </div>

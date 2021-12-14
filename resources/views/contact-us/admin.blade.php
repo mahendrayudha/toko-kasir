@@ -66,12 +66,22 @@
 @endsection
 @push('after-script')
     <script>
-        $(document).ready(function() {
-            $('#contact_us').dataTable({
-                "paging": true,
-                "ordering": true,
-                "searching": true,
-                "info": true
+        let table;
+
+        $(function () {
+            table = $('#contact_us').DataTable({
+                responsive: true,
+                processing: true,
+                serverSide: true,
+                autoWidth: false,
+                ajax: {
+                    url: 'http://127.0.0.1:8000/kategori/data',
+                },
+                columns: [
+                    {data: 'DT_RowIndex', searchable: false, sortable: false},
+                    {data: 'nama_kategori'},
+                    {data: 'aksi', searchable: false, sortable: false},
+                ]
             });
         });
    </script>

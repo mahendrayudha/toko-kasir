@@ -37,11 +37,24 @@
 
                     </div>
                     <div class="box-footer text-right">
-                        <button class="btn btn-sm btn-flat btn-primary"><i class="fa fa-save"></i> Simpan
-                            Perubahan</button>
+                        <button class="btn btn-sm btn-flat btn-primary"><i class="fa fa-save"></i>
+                            Simpan Perubahan
+                        </button>
                     </div>
                 </form>
             </div>
         </div>
     </div>
 @endsection
+@push('scripts')
+    <script src="https://cdn.ckeditor.com/4.14.1/standard/ckeditor.js"></script>
+    <script>
+        CKEDITOR.replace('deskripsi');
+        CKEDITOR.config.autoParagraph = false;
+    </script>
+    <style>
+        #deskripsi {
+            width: 100% !important;
+        }
+    </style>
+@endpush
